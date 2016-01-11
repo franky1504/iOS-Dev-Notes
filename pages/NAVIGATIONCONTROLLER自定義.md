@@ -1,5 +1,5 @@
-# iOS-Dev-Notes
-自訂NAVIGATIONBAR (導航列) 的背景和文字COLOR
+# 自訂Navigationbar (導航列) 的背景和文字Color
+```
 
 //設置NavigationBar背景颜色
 [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
@@ -14,3 +14,4 @@ UIImage *navigationBar = [UIImage imageNamed:@"UINavigationBar"];
 //initWithTitle後面的@""不填入東西
 UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 self.navigationItem.backBarButtonItem = item;
+```
