@@ -1,4 +1,4 @@
-# 以特定字元為基準作分割：
+## 以特定字元為基準作分割：
 ```
 //以 "/" 來分割字串
 NSArray* date = [@"10/04/2011″ componentsSeparatedByString: @"/"];
