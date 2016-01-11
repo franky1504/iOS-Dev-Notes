@@ -1,6 +1,5 @@
 # 自訂Navigationbar (導航列) 的背景和文字Color
 ```
-
 //設置NavigationBar背景颜色
 [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
 
