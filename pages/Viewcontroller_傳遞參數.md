@@ -1,7 +1,7 @@
-# 使用Storyboard
-## 必須先在目標Viewcontroller初始化一個public變數
+## 使用Storyboard
+* 必須先在目標Viewcontroller初始化一個public變數
 
-## 必須先到Storyboard中，設定要被傳遞訊息的target view id
+* 必須先到Storyboard中，設定要被傳遞訊息的target view id
 ```
 Visit_dataShowViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
 //傳遞參數 將visitData 傳給 detailView 的變數 DetailItem
@@ -10,11 +10,11 @@ Visit_dataShowViewController *detailView = [self.storyboard instantiateViewContr
 [self.navigationController pushViewController:detailView animated:YES];
 ```
 
-# 使用Segue
+## 使用Segue
 
-## 必須先到Storyboard中，為segue設定id如：@"editv" 
+* 必須先到Storyboard中，為segue設定id如：@"editv" 
 
-## 當一個view中有多條segue時，就必須透過if的判斷來知道要push的是哪一個view
+* 當一個view中有多條segue時，就必須透過if的判斷來知道要push的是哪一個view
 ```
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"editv"]) {
